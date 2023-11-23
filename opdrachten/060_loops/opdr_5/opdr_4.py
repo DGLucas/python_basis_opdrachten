@@ -6,4 +6,5 @@
 
 # Hier start de for-loop
 
-my_list = []
+resultaat = [x * 3 for x in range(1, 21)][:6] #Range van 1 tot 20, Alles x3, max6x (x is de range)
+print(resultaat)

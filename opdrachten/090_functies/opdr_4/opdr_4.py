@@ -4,11 +4,14 @@
 
 
 def volledige_naam(lijst_met_namen):
-    # hier komt jouw code
-    # Het woordje pass mag je weghalen
-    pass
+    for naam in lijst_met_namen:
+        # Bouw de volledige naam op basis van de dictionary-elementen
+        volledige_naam = f"{naam['voornaam']} {naam['tussenvoegsel']} {naam['achternaam']}".strip()
+        
+        # Toon de volledige naam op het scherm
+        print(volledige_naam)
 
-
+# Test de functie
 namen = [
     {"voornaam": "Willem", "tussenvoegsel": "van", "achternaam": "Dijk"},
     {"voornaam": "Klaas", "tussenvoegsel": "", "achternaam": "Wopstra"},
